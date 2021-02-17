@@ -1,0 +1,12 @@
+__SELECT FEMALE NAMES STARTING WITH A
+SELECT
+  name
+FROM
+  `bigquery-public-data.usa_names.usa_1910_2013`
+WHERE
+  name LIKE 'A%'
+  AND gender='F'
+GROUP BY
+  name
+LIMIT
+  10
